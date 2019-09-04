@@ -13,6 +13,7 @@ import { HttpClientModule } from "@angular/common/http";
 // import { HomeComponent } from './home/home.component';
 // import { LoginComponent } from './login/login.component';
 import { UserdataService } from "./userdata.service";
+import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
 
 // imports:[
 //   RouterModule.forRoot([])
@@ -29,6 +30,10 @@ const appRoutes: Routes =[{
 {
   path:'login',
   component: LoginComponent
+},
+{
+  path:'forgotPassword',
+  component: ForgotPasswordComponent
 }
 
 ];
@@ -38,7 +43,8 @@ const appRoutes: Routes =[{
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,

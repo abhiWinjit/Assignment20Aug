@@ -8,18 +8,25 @@ import { map } from 'rxjs/operators';
 })
 export class UserdataService {
 
-  createUser(user){
+  create_user(user){
     let headers = new Headers({'Content-Type':'application/json'});
     let options = new RequestOptions({headers:headers});
     let body = user;
     return this.http.post('https://staging.cloz.io:6003/addUser',body,options).pipe(map((res:Response)=>res.json()));
   }
 
-  userLogin(credetials){
+  user_login(credetials){
     let headers = new Headers({'Content-Type':'application/json'});
     let options = new RequestOptions({headers:headers});
     let body =credetials;
     return this.http.post('https://staging.cloz.io:6003/login',body,options).pipe(map((res:Response)=>res.json()));
+  }
+
+  forgot_password(email){
+    let headers = new Headers({'Content-Type':'application/json'});
+    let options = new RequestOptions({headers:headers});
+    let body = email;
+    return this.http.post('https://staging.cloz.io:6003/requestForgotPassword',body,options).pipe(map((res:Response)=>res.json()));
   }
 
   constructor(private http:Http) { }

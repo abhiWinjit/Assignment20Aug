@@ -45,7 +45,7 @@ export class RegisterComponent implements OnInit {
   }
   
 
-    this._demoservice.createUser(tempUser).subscribe(
+    this._demoservice.create_user(tempUser).subscribe(
       data => {
           console.log("Data send successfully",data);
           

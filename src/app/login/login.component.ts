@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   }
   
 
-    this._loginservice.userLogin(tempUser).subscribe(
+    this._loginservice.user_login(tempUser).subscribe(
       response => {
           console.log("Data send successfully", response);
           console.log("Token",response.data.token);
