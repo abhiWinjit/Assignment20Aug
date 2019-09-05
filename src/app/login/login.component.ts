@@ -1,18 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { UserdataService } from "../userdata.service";
 import { Observable } from "rxjs";
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+
 })
 export class LoginComponent implements OnInit {
 
+   
   constructor(private _loginservice: UserdataService) { }
 
   ngOnInit() {
   }
+
 
   userLogin(){
     var email1 = (<HTMLInputElement>document.getElementById('email-id')).value;
