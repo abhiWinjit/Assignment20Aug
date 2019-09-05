@@ -3,12 +3,14 @@
      (click)="onSelected()">
     <div class="pull-left">
         <h4 class="list-group-item-heading">{{home.name}}</h4>
-        <p class="list-group-item-text">{{recipe.description}}</p>
+        <p class="list-group-item-text">{{home.description}}</p>
     </div>    
     <span class="pull-right">
         <img src="{{home.imagePath}}"
              alt="{{home.name}}"
              class="img-responsive"
-             style="max-height: 50px;">
+             style="height: 50px; 
+                    width: 65px;">
     </span>
+
 </a>

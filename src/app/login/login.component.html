@@ -1,17 +1,63 @@
 <div class="container">
   <div class="col-sm-10">
-    <h3>Fill Details to Login</h3>
+    <h3 class="pb-2 mt-4 mb-2 border-bottom">Fill Details to Login</h3>
 
     <hr>
 
     <body>
-      
-        <p>E-mail Address: <input id="email-id" type="text" size=65 name="EMail"></p><br>
-        <p>Password: <input id="pw" type="password" size=65 name="Password"></p><br>
-        <p> <button routerLink="/forgotPassword" >Forgot Password ?</button></p>
-        <p><button (click)="userLogin()">submit</button>
-          <input type="reset" value="Reset" name="Reset">
-        </p>
-      
+
+      <p>E-mail Address: <input id="email-id" type="text" size=65 name="EMail"></p><br>
+      <p>Password: <input id="pw" type="password" size=65 name="Password"></p><br>
+      <p> <button routerLink="/forgotPassword">Forgot Password ?</button></p>
+      <p><button (click)="userLogin()">submit</button>
+        <input type="reset" value="Reset" name="Reset">
+      </p>
+
     </body>
   </div>
+</div>
+
+<div _ngcontent-c10="" class="row">
+  <form _ngcontent-c10="" class="login-card clearfix ng-pristine ng-invalid ng-touched" novalidate="">
+    <div _ngcontent-c10="" class="card-head">
+      <div _ngcontent-c10="" class="modal__dialog col-sm-12">
+        <h1 _ngcontent-c10="">LOGIN</h1>
+      </div>
+      <div _ngcontent-c10="" class="dropdown-divider-3"></div>
+      <div _ngcontent-c10="" class="form-group mt-4" title="Email Address"><i _ngcontent-c10=""
+          class="icon-login_email form-control-icon"></i><input _ngcontent-c10="" apptrim="" autofocus=""
+          class="form-control cos-input ng-pristine ng-invalid ng-touched" id="email" name="email" required=""
+          type="text" placeholder="Email Address" maxlength="254" pattern="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
+        <!---->
+        <div _ngcontent-c10="" class="error-message">
+          <div _ngcontent-c10=""> Email Address is required </div>
+          <div _ngcontent-c10="" hidden=""> Invalid Email Address </div>
+          <div _ngcontent-c10="" hidden=""> Max 254 characters </div>
+        </div>
+      </div>
+      <div _ngcontent-c10="" class="form-group" title="Password"><i _ngcontent-c10=""
+          class="icon-login_password form-control-icon"></i><input _ngcontent-c10=""
+          class="form-control cos-input ng-untouched ng-pristine ng-invalid" id="password" name="password" required=""
+          type="password" placeholder="Password">
+        <!---->
+      </div>
+      <div _ngcontent-c10="" class="row clearfix">
+        <div _ngcontent-c10="" class="form-group col-6 col-md-6 text-left"><a _ngcontent-c10="" class="small-text"
+            href="/app/forgot-password"><u _ngcontent-c10="">Forgot Password?</u></a></div>
+        <div _ngcontent-c10="" class="form-group col-6 col-md-6  text-right"><a _ngcontent-c10="" class="small-text"
+            href="/app/register-user"><u _ngcontent-c10="">New User?</u></a></div>
+      </div>
+      <div _ngcontent-c10="" class="icon-position-relative clearfix"><button _ngcontent-c10=""
+          class="button icon-btn2 filled" type="submit" disabled=""><i _ngcontent-c10="" class="icon-emoji"></i><span
+            _ngcontent-c10="">LOGIN</span></button></div>
+      <div _ngcontent-c10="" class="or">
+        <div _ngcontent-c10="" class="or-circle">
+          <h5 _ngcontent-c10="">OR</h5>
+        </div>
+      </div>
+      <div _ngcontent-c10="" class="my-2 icon-position-relative "><button _ngcontent-c10=""
+          class="button icon-btn2 filled2" id="googleBtn" type="submit"><img _ngcontent-c10="" alt="" height="22px;"
+            src="assets/images/google.svg" width="22px"><span _ngcontent-c10="">LOGIN WITH GOOGLE</span></button></div>
+    </div>
+  </form>
+</div>

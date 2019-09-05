@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,EventEmitter, Output, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
-
+  @Output() featureSelected = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(feature: string){
+    this.featureSelected.emit(feature);
   }
 
 }

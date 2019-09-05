@@ -12,14 +12,14 @@ export class UserdataService {
     let headers = new Headers({'Content-Type':'application/json'});
     let options = new RequestOptions({headers:headers});
     let body = user;
-    return this.http.post('https://staging.cloz.io:6003/addUser',body,options).pipe(map((res:Response)=>res.json()));
+    return this.http.post('https://staging.cloz.io:6003/addUser', body, options).pipe(map((res:Response)=>res.json()));
   }
 
   user_login(credetials){
     let headers = new Headers({'Content-Type':'application/json'});
     let options = new RequestOptions({headers:headers});
     let body =credetials;
-    return this.http.post('https://staging.cloz.io:6003/login',body,options).pipe(map((res:Response)=>res.json()));
+    return this.http.post('https://staging.cloz.io:6003/login', body, options).pipe(map((res:Response)=>res.json()));
   }
 
   forgot_password(email){

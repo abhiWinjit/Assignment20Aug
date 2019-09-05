@@ -17,7 +17,7 @@ export class HomeService{
                  'There is nothing more important than a good, safe, secure home.',
                  'https://junkmailimages.blob.core.windows.net/large/7997d44d19094dcaad26983d6274bd63.jpg'),
         new Home('Py-Piper',
-                 'In this home… We do second chances. We do real. We do mistakes. We do I’m sorrys. We do loud really well. We do hugs. We do together best of all.',
+                 'In this home… We do second chances. We do real. We do loud really well.',
                  'https://d1qfj231ug7wdu.cloudfront.net/pictures/estate/2912/2911125/11748860155cab093c6d1987.74973892_1920.jpg')          
     ];
 
