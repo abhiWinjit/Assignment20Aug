@@ -1,1 +1,18 @@
-<p>home works!</p>
+<div class="row">
+    <div class="col-md-7">
+        <app-subhome-list></app-subhome-list>
+    </div>
+    <div class="col-md-5">
+        <app-subhome-details
+        *ngIf="selectedHome; else infoText"
+        [home]="selectedHome"
+        ></app-subhome-details>
+        <ng-template #infoText>
+            <p>
+                Please select your dream house
+            </p>
+        </ng-template>
+    </div>
+</div>
+
+

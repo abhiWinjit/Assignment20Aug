@@ -14,6 +14,10 @@ import { HttpClientModule } from "@angular/common/http";
 // import { LoginComponent } from './login/login.component';
 import { UserdataService } from "./userdata.service";
 import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
+import { SubhomeListComponent } from './home/subhome-list/subhome-list.component';
+import { SubhomeDetailsComponent } from './home/subhome-details/subhome-details.component';
+import { SubhomeItemComponent } from './home/subhome-list/subhome-item/subhome-item.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 // imports:[
 //   RouterModule.forRoot([])
@@ -44,7 +48,11 @@ const appRoutes: Routes =[{
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    SubhomeListComponent,
+    SubhomeDetailsComponent,
+    SubhomeItemComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
